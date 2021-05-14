@@ -1,0 +1,47 @@
+/* in the name of allah */
+
+body.dark{
+    background-color: rgb(0, 0, 0);
+}
+body.dark p{
+    color: rgb(255, 255, 255);
+}
+
+/* navigation */
+
+body.dark #navigation{
+    background-color: #464646;
+}
+body.dark .nav-logo{
+    color: #ffd000;
+}
+
+body.dark #menu-button div{
+     border-color: white;
+ }
+ body.dark #hamberger-menu{
+     background-color: #464646;
+ }
+ body.dark .menu-close-btn i{
+     color: rgb(255, 255, 255);
+ }
+ body.dark .menu-logo{
+     color: white;
+ }
+ body.dark #hamberger-items-ul{
+     list-style-image: url('../images/header/list-style-type-white.svg');
+ }
+ body.dark #hamberger-items-ul li{
+    border-bottom: 3px solid#464646;
+ }
+ body.dark #hamberger-items-ul li:hover{
+    border-bottom: 3px solid#ffd000;
+ }
+ body.dark #hamberger-items-ul li a{
+     color: white;
+ }
+ body.dark .social-icons a i:hover{
+    color: rgb(209, 209, 209);
+}
+
+/*------ End of navigation */
