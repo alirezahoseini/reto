@@ -10,7 +10,7 @@ body.dark p{
 /* navigation */
 
 body.dark #navigation{
-    background-color: #464646;
+    background-color: #000000;
 }
 body.dark .nav-logo{
     color: #ffd000;
