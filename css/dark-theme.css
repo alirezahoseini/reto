@@ -45,3 +45,38 @@ body.dark #menu-button div{
 }
 
 /*------ End of navigation */
+
+/* navTool */
+body.dark .navTool .col .navToolItem{
+    color: white;
+}
+body.dark .navTool .col .navToolItem:nth-child(even){
+    background-color: rgb(39, 39, 39);
+}
+body.dark .navTool .col .navToolItem:nth-child(odd){
+    background-color: rgb(66, 66, 66);
+}
+body.dark .navToolArrows div{
+    background-color: rgb(46, 46, 46);
+    color: white;
+}
+body.dark .navToolArrows div:hover{
+    background-color: rgb(85, 85, 85);
+}
+
+/* scrollbar  */
+body.dark .navTool::-webkit-scrollbar-track{
+    background-color: rgb(27, 27, 27);
+}
+body.dark .navTool::-webkit-scrollbar-thumb{
+    background: rgb(56, 56, 56);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+/*----End of  scrollbar  */
+
+/*-------End of navTool */
