@@ -63,7 +63,6 @@ body.dark .navToolArrows div{
 body.dark .navToolArrows div:hover{
     background-color: rgb(85, 85, 85);
 }
-
 /* scrollbar  */
 body.dark .navTool::-webkit-scrollbar-track{
     background-color: rgb(27, 27, 27);
@@ -78,5 +77,11 @@ body.dark .navTool::-webkit-scrollbar-thumb{
 }
 
 /*----End of  scrollbar  */
-
 /*-------End of navTool */
+
+/* loading button */
+body.dark .loadMoreBtn{
+    background-color: rgb(61, 61, 61);
+    color: rgb(172, 172, 172);
+}
+/*-------End of loading button */

@@ -21,3 +21,11 @@ menuCloseBtn2.addEventListener("click", function(){
     hambergerMenu.classList.remove("active");
 });
 //-----End of menu button
+
+// loading button
+const loadingButton = document.getElementsByClassName("loadMoreBtn")[0];
+const lodingGif = document.getElementsByClassName("loadingGif")[0];
+	loadingButton.addEventListener("click", function(){
+		loadingButton.classList.toggle("active")
+	});
+//----End of loading button

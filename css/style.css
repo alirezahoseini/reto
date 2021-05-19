@@ -44,6 +44,47 @@
     width: minmax(15px , 10%);
     margin-right: 5px;
 }
+/* load more btn */
+.loadMoreBtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(230, 230, 230);
+    color: rgb(42, 42, 42);
+    padding: 1rem;
+    height: 40px;
+    width: 40%;
+    border-radius: 100px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    -ms-border-radius: 100px;
+    -o-border-radius: 100px;
+    margin: 0 auto;
+}
+.loadMoreBtn.active{
+    background-color: rgb(97, 97, 97);
+    box-shadow: 0 0 .1px 5px rgba(230, 230, 230, 0.494);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.loadMoreBtn .loadingGif{
+    max-width: 0px;
+    visibility: hidden;
+    opacity: 0;
+}
+.loadMoreBtn.active .loadingGif{
+    visibility: visible;
+    opacity: 1;
+    margin-left: 5px;
+    margin-top: 4px;
+}
+.loadMoreBtn .loadingGif img{
+    width: 30px;
+}
+
+/*-----End of load more btn */
 /*-------End of grid styles */
 
 /* search box */
@@ -181,3 +222,16 @@
 /*----End of  scrollbar  */
 
 /*------End of navTool */
+
+
+
+
+/* tablet and mobile style */
+@media screen and (max-width:991px){
+    /* loading btn */
+    .loadMoreBtn{
+        width: 80%;
+    }
+    /*-----End of loading btn */
+}
+/*-------End of tablet and mobile style */
