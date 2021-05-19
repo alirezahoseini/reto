@@ -20,6 +20,47 @@
     -o-border-radius: 18px;
     overflow: hidden;
 }
+/*-------End of general class with the grid */
+
+
+/* Grid LightBox */
+.grid-Light-Box{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    visibility: hidden;
+    opacity: 0;
+    background-color: rgba(2, 2, 2, 0.76);
+    z-index: 100;
+    margin-top: 20px;
+}
+.grid-light-box-object{
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80vw;
+    height: 80vh;
+}
+.grid-lb-image{
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.grid-Light-Box:target{
+    opacity: 1;
+    visibility: visible;
+}
+/*-------End of Grid LightBox */
+
 
 
 /* spans */
@@ -138,7 +179,7 @@
 }
 
 /* --------End of spans */
-/* --------End of general class with the grid */
+
 
 
 
