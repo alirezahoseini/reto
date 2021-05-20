@@ -33,9 +33,14 @@
     height: 100vh;
     visibility: hidden;
     opacity: 0;
-    background-color: rgba(2, 2, 2, 0.76);
+    background-color: rgba(2, 2, 2, 0.89);
     z-index: 100;
     margin-top: 20px;
+    transform: scale(.8);
+    -webkit-transform: scale(.8);
+    -moz-transform: scale(.8);
+    -ms-transform: scale(.8);
+    -o-transform: scale(.8);
 }
 .grid-light-box-object{
     padding: 5px;
@@ -58,7 +63,75 @@
 .grid-Light-Box:target{
     opacity: 1;
     visibility: visible;
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
 }
+/* grid-ligt-box-icons */
+.grid-ligt-box-icons{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0);
+    z-index: 101;
+    visibility: hidden;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: right;
+    transform: scale(.8);
+    -webkit-transform: scale(.8);
+    -moz-transform: scale(.8);
+    -ms-transform: scale(.8);
+    -o-transform: scale(.8);
+}
+.grid-Light-Box:target+.grid-ligt-box-icons{
+    visibility: visible;
+    opacity: 1;
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+}
+.lb-icon-row{
+    display: flex;
+    flex-direction: column;
+}
+.lb-icon-row .grid-light-box-object{
+    visibility: hidden;
+}
+.icon-close img{
+    width: 40px;
+}
+.lb-icon-row .icon-close{
+    position: relative;
+    top: 55px;
+}
+.lb-icon-row .icon-arrows{
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    padding-right: 40px;
+    padding-left: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+.lb-icon-row .icon-arrows a{
+    opacity: .7;
+}
+.lb-icon-row .icon-arrows a:hover{
+    opacity: 1;
+}
+.icon-arrows img{
+    width: 45px;
+}
+/*---End of grid-ligt-box-icons */
 /*-------End of Grid LightBox */
 
 
