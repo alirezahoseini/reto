@@ -1,26 +1,26 @@
 /* in the name of allah */
 
 body.dark{
-    background-color: rgb(0, 0, 0);
+    background-color: #0e171c;
 }
 body.dark p{
-    color: rgb(255, 255, 255);
+    color: rgb(226, 226, 226);
 }
 
 /* navigation */
 
 body.dark #navigation{
-    background-color: #000000;
+    background-color: #0e171c;
 }
 body.dark .nav-logo{
-    color: #ffd000;
+    color: rgb(217, 241, 255);
 }
 
 body.dark #menu-button div{
      border-color: white;
  }
  body.dark #hamberger-menu{
-     background-color: #464646;
+     background-color: #27303b;
  }
  body.dark .menu-close-btn i{
      color: rgb(255, 255, 255);
@@ -32,16 +32,23 @@ body.dark #menu-button div{
      list-style-image: url('../images/header/list-style-type-white.svg');
  }
  body.dark #hamberger-items-ul li{
-    border-bottom: 3px solid#464646;
+    border-bottom: 3px solid#27303b;
  }
  body.dark #hamberger-items-ul li:hover{
-    border-bottom: 3px solid#ffd000;
+    border-bottom: 3px solid rgb(217, 241, 255);
+    list-style-image: url('../images/header/list-style-type-white.svg');
  }
  body.dark #hamberger-items-ul li a{
      color: white;
  }
  body.dark .social-icons a i:hover{
     color: rgb(209, 209, 209);
+}
+body.dark .login-button{
+    background: url("../images/header/login-icon-light.svg");
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 /*------ End of navigation */
