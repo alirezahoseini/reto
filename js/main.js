@@ -10,16 +10,21 @@ darkButton.addEventListener("click", function () {
 const menuButton = document.getElementById("menu-button");
 const hambergerMenu = document.getElementById("hamberger-menu");
 const menuCloserBtn1 = document.getElementById("menu-closer-1");
-const menuCloseBtn2 = document.getElementById("menu-close-btn-2");
+const hambergerMenuBgFillter = document.getElementById("hamberger-menu-background-fillter");
 menuButton.addEventListener("click", function () {
 	hambergerMenu.classList.add("active");
+	hambergerMenuBgFillter.classList.add("active");
+
 });
 menuCloserBtn1.addEventListener("click", function () {
 	hambergerMenu.classList.remove("active");
+	hambergerMenuBgFillter.classList.remove("active");
 });
-menuCloseBtn2.addEventListener("click", function(){
-    hambergerMenu.classList.remove("active");
+hambergerMenuBgFillter.addEventListener("click",function(){
+	hambergerMenu.classList.remove("active");
+	hambergerMenuBgFillter.classList.remove("active");
 });
+
 //-----End of menu button
 
 // loading button

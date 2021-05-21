@@ -186,19 +186,20 @@ body{
 }
 /*-------End of menu-button */
 /* hamberger menu */
-.hamberger-menu-background-fillter{
+#hamberger-menu-background-fillter{
     position: absolute;
     top: 0;
     display: block;
     width: 100vw;
     height: 100vh;
-    background-color: rgba(0, 0, 0, 0.164);
+    background-color: rgba(0, 0, 0, 0.431);
     z-index: 1023;
-    transform: translateX(-100%);
-    -webkit-transform: translateX(-100%);
-    -moz-transform: translateX(-100%);
-    -ms-transform: translateX(-100%);
-    -o-transform: translateX(-100%);
+    visibility: hidden;
+    opacity: 0;
+}
+#hamberger-menu-background-fillter.active{
+    visibility: visible;
+    opacity: 1;
 }
 #hamberger-menu{
     position: absolute;
@@ -285,19 +286,6 @@ body{
 }
 .social-icons a i:hover{
     color: rgb(83, 83, 83);
-}
-#menu-close-btn-2{
-    display: inline-flex;
-    background-color: rgb(199, 199, 199);
-    padding: 10px;
-    color: rgb(78, 78, 78);
-    text-align: center;
-    border-radius: 600px;
-    -webkit-border-radius: 600px;
-    -moz-border-radius: 600px;
-    -ms-border-radius: 600px;
-    -o-border-radius: 600px;
-    box-shadow: 0 0 .1px 4px gainsboro;
 }
 /*-------End of social icons */
 /*-------End of hamberger menu */
