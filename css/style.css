@@ -51,7 +51,6 @@
     align-items: center;
     background-color: rgb(230, 230, 230);
     color: rgb(42, 42, 42);
-    padding: 1rem;
     height: 40px;
     width: 40%;
     border-radius: 100px;
@@ -125,6 +124,8 @@
     border: none;
     background-color: white;
     outline: none;
+    text-align: center;
+    font-family: inherit;
 }
 .search-box .col form input{
     width: 80%;
@@ -156,17 +157,18 @@
     -o-border-radius: 5px;
     color: black;
 }
-.navTool .col .navToolItem:nth-child(even){
+.navTool .col .navToolItem{
     background-color: rgb(245, 245, 245);
-}
-.navTool .col .navToolItem:nth-child(odd){
-    background-color: rgb(216, 216, 216);
 }
 .navTool .col .navToolItem:hover{
     background-color: rgb(185, 185, 185) !important;
 }
 .navTool .col .navToolItem:last-child{
     padding-right: 50px;
+}
+.navTool .col .navToolItem i{
+    font-weight: 500;
+    color: rgb(73, 73, 73);
 }
 .navToolArrows{
     display: flex;
