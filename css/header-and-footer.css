@@ -16,11 +16,11 @@ body{
     overflow-x: hidden;
 }
 *{
-    transition: .3s cubic-bezier(.15,.1,.47,.89);
-    -webkit-transition: .3s cubic-bezier(.15,.1,.47,.89);
-    -moz-transition: .3s cubic-bezier(.15,.1,.47,.89);
-    -ms-transition: .3s cubic-bezier(.15,.1,.47,.89);
-    -o-transition: .3s cubic-bezier(.15,.1,.47,.89);
+    transition: .5s cubic-bezier(.15,.1,.47,.89);
+    -webkit-transition: .5s cubic-bezier(.15,.1,.47,.89);
+    -moz-transition: .5s cubic-bezier(.15,.1,.47,.89);
+    -ms-transition: .5s cubic-bezier(.15,.1,.47,.89);
+    -o-transition: .5s cubic-bezier(.15,.1,.47,.89);
 }
 
 
