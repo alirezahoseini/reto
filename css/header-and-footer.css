@@ -46,6 +46,7 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
 }
 /* switcher */
 @keyframes dark{
@@ -90,7 +91,6 @@ body{
     width:21px;
     height: 21px;
     margin: 0 19px;
-    box-shadow: 1px 1px 17px .1px rgba(90, 90, 90, 0.226);
     position: relative;
 }
 #darkButton + label::after{
@@ -155,6 +155,164 @@ body{
     background-repeat: no-repeat;
 }
 /*----End of login button */
+/* login form */
+#login-fillter{
+    position: fixed;
+    top: 0;
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.692);
+    z-index: 1023;
+    visibility: hidden;
+    opacity: 0;
+}
+#login-fillter.active{
+    visibility: visible;
+    opacity: 1;
+}
+.login-base{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    visibility: hidden;
+    opacity: 0;
+    overflow-y: scroll;
+    padding: 20px 0;
+}
+.login-base.active{
+    visibility: visible;
+    opacity: 1;
+}
+.login-form{
+    position: absolute;
+    top: 80px;
+    background-color: white;
+    padding: 10px;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    width: 80vw;
+    display: flex;
+    z-index: 1028;
+    visibility: hidden;
+    opacity: 0;
+    overflow: hidden;
+}
+.login-base.active .login-form{
+    visibility: visible;
+    opacity: 1;
+}
+.login-tabs{
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+    margin: 3rem auto;
+    text-align: center;
+    padding: 4px 2px;
+    border: 2px dashed rgb(63, 63, 63);
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.login-tabs span{
+    padding: 10px;
+    width: 49%;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+.login-tabs span.active{
+    background: rgb(236, 236, 236);
+}
+.login-tabs span:hover{
+    background-color: rgb(212, 212, 212);
+}
+.input-group{
+    border: 2px solid rgb(158, 157, 157);
+    width:60%;
+    margin: 20px auto;
+    border-radius: 50px;
+    padding: 10px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+}
+.input-group input{
+    outline: none;
+    border: none;
+    width: 85%;
+    font-family: inherit;
+    font-size: .8rem;
+    background-color: transparent;
+}
+.input-group i{
+    font-weight: 500;
+    width: 5%;
+}
+.login-form button{
+    background-color: rgb(0, 104, 200);
+    color: white;
+    padding: 10px;
+    margin: 35px 0;
+    width: 60%;
+    border-radius: 40px;
+    -webkit-border-radius: 40px;
+    -moz-border-radius: 40px;
+    -ms-border-radius: 40px;
+    -o-border-radius: 40px;
+}
+.login-form button:hover{
+    background-color: rgb(1, 123, 238);
+}
+.login-with{
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+    margin: 15px auto 30px auto;
+}
+.login-with a{
+    color: black;
+    font-size: 1.5rem;
+    background: rgb(231, 231, 231);
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.login-with a:nth-child(1):hover{
+    background-color: red;
+    color: white;
+}
+.login-with a:nth-child(2):hover{
+    background-color: rgb(0, 17, 255);
+    color: white;
+}
+.login-img div{
+    display: block;
+    height: 100%;
+    width: 100%;
+    background: url("../images/home-page-images/login-gackground.jpg") right no-repeat;
+    background-size: cover;
+
+}
+/*----End of login form */
 /*--------End of login */
 
 
@@ -246,24 +404,26 @@ body{
 }
 
 #hamberger-items-ul{
-    list-style: initial;
-    list-style-image: url("../images/header/list-style-type-black.svg");
-    margin:30px 0 0 40px;
+    list-style: none;
+    margin:30px 0 0 10px;
     font-size: 1.1rem;
 }
 #hamberger-items-ul li{
-    margin: 15px auto;
+    margin: 18px auto;
     font-weight: 500;
     padding-bottom: 5px;
     border-bottom: 3px solid #ffffff;
 }
 #hamberger-items-ul li:hover{
-    list-style: initial;
-    list-style-image: url('../images/header/list-style-type-black.svg');
-    border-bottom: 3px solid #ffd000;
+    border-bottom: 3px solid #8b8b8b;
 }
 #hamberger-items-ul li a{
     color: black;
+}
+#hamberger-items-ul li a i{
+    font-weight: 500;
+    font-size: .9rem;
+    margin-right: 7px;
 }
 
 /* social icons */
@@ -408,5 +568,25 @@ footer{
     width: 300;
 }
 /*-------End of hamberger menu */
+/* login */
+.login-base{
+    padding-top: 40px;
+}
+.login-form .login-img{
+    display: none;
+}
+.login-tabs{
+    width: 90%;
+}
+.input-group{
+    width: 90%;
+}
+.login-form button{
+    width: 90%;
+}
+.login-with{
+    width: 90%;
+}
+/*------End of login */
 }
 /* End of mobile style */

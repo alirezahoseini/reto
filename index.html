@@ -18,6 +18,45 @@
 <body id="bodyChenger">
     <div class="container-fluid m-0 p-0">
 
+        <!--  login form -->
+        <div id="login-fillter"></div>
+        <div class="login-base">
+            <form action="#" method="POST" class="login-form row mx-auto p-0">
+                <div class="col-md-6 text-center">
+                    <h2 class="h2 bold my-3">Welcome Back :)</h2>
+                    <div class="login-tabs">
+                        <span class="active">Login</span>
+                        <span>Singup</span>
+                    </div>
+                    <div class="input-group">
+                        <i class="fa fa-user"></i>
+                        <input type="text" name="user-name" placeholder="Email or UserName" required minlength="4">
+                    </div>
+                    <div class="input-group">
+                        <i class="fa fa-lock"></i>
+                        <input type="password" name="password" placeholder="Password">
+                    </div>
+                    <div class="checkbox">
+                        <input type="checkbox" name="c" id="c">
+                        <label for="c">Remember me</label>
+                    </div>
+                    <button type="submit">Submit</button>
+                    <div class="login-with">
+                        <a>
+                            <i class="fab fa-google"></i>
+                        </a>
+                        <a>
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-6 login-img p-0">
+                    <div></div>
+                </div>
+            </form>
+        </div>
+        <!-- End of login form -->
+
         <!-- navigation -->
         <nav id="navigation">
             <!-- menu -->
@@ -46,22 +85,27 @@
                     <ul id="hamberger-items-ul">
                         <li>
                             <a href="#">
-                                Post
+                                <i class="fa fa-bookmark fa-fw"></i><span>Categoris</span>
                             </a>
                         </li>
                         <li>
                             <a href="#">
-                                Grids
+                                <i class="fa fa-fire-alt fa-fw"></i><span>Hot Photos</span>
                             </a>
                         </li>
                         <li>
                             <a href="#">
-                                Content
+                                <i class="fa fa-crop-alt fa-fw"></i><span>Image Editor</span>
                             </a>
                         </li>
                         <li>
                             <a href="#">
-                                Lisensing
+                                <i class="fa fa-share-alt fa-fw"></i><span>Upload Picture</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-blog fa-fw"></i><span>Reto Blog</span>
                             </a>
                         </li>
                     </ul>
@@ -93,17 +137,21 @@
             <!-- End of logo -->
 
             <section class="buttons">
-            <!-- login -->
-            <div class="login">
-                <a class="login-button"></a>
-            </div>
-            <!-- login button -->
-            <!-- switcher -->
-            <div id="switcher">
-                <input type="checkbox" id="darkButton">
-                <label for="darkButton"></label>
-            </div>
-            <!-- End of switcher -->
+                <!-- login -->
+                <!-- login button -->
+                <div>
+                    <a class="login-button"></a>
+                </div>
+                <!-- login button -->
+                <!-- End of login -->
+
+                <!-- switcher -->
+                <div id="switcher">
+                    <input type="checkbox" id="darkButton">
+                    <label for="darkButton"></label>
+                </div>
+                <!-- End of switcher -->
+
             </section>
 
         </nav>

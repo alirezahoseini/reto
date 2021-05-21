@@ -28,15 +28,12 @@ body.dark #menu-button div{
  body.dark .menu-logo{
      color: white;
  }
- body.dark #hamberger-items-ul{
-     list-style-image: url('../images/header/list-style-type-white.svg');
- }
+
  body.dark #hamberger-items-ul li{
     border-bottom: 3px solid#27303b;
  }
  body.dark #hamberger-items-ul li:hover{
     border-bottom: 3px solid rgb(217, 241, 255);
-    list-style-image: url('../images/header/list-style-type-white.svg');
  }
  body.dark #hamberger-items-ul li a{
      color: white;
@@ -52,6 +49,22 @@ body.dark .login-button{
 }
 
 /*------ End of navigation */
+
+/* login */
+body.dark .login-form{
+    background-color:#0e171c ;
+    color: rgb(209, 209, 209);
+}
+body.dark .login-tabs{
+    border-color: #545b64;
+}
+body.dark .login-tabs span.active{
+    background-color: #545b64;
+}
+body.dark .login-tabs span:hover{
+    background-color: gray;
+}
+/*------End of login */
 
 /* navTool */
 body.dark .navTool .col .navToolItem{
