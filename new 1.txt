@@ -987,7 +987,7 @@
 				</div>
 				<div class="col footer-menu mx-auto">
 					<ul class="footer-menu-ul mx-auto row">
-						<div class="col-md-6 p-0 m-0">
+						<div class="col-md-6">
 							<li>
 								<a href="#">
 									<i class="fa fa-bookmark fa-fw"></i><span>Categoris</span>
@@ -1004,7 +1004,7 @@
 								</a>
 							</li>
 						</div>
-						<div class="col-md-6 p-0 m-0">
+						<div class="col-md-6">
 							<li>
 								<a href="#">
 									<i class="fa fa-share-alt fa-fw"></i
@@ -1014,11 +1014,6 @@
 							<li>
 								<a href="#">
 									<i class="fa fa-blog fa-fw"></i><span>Reto Blog</span>
-								</a>
-							</li>
-							<li>
-								<a href="#">
-									<i class="far fa-phone fa-fw"></i><span>Contact</span>
 								</a>
 							</li>
 						</div>
@@ -1045,7 +1040,7 @@
 				</div>
 				<div class="col-12">
 					<div class="copy">
-						<p>Designer<a href="#"> Alireza hosseini</a></p>
+						<p>Dising by<a href="#"> Alireza hosseini</a></p>
 					</div>
 				</div>
 			</footer>
