@@ -1,7 +1,7 @@
 /* in the name of allah */
 
 body.dark{
-    background-color: #0e171c;
+    background-color: #0e0f1c;
 }
 body.dark p{
     color: rgb(226, 226, 226);
@@ -13,7 +13,7 @@ body.dark #navigation{
     background-color: #0e171c;
 }
 body.dark .nav-logo{
-    color: rgb(217, 241, 255);
+    color: rgb(255, 208, 0);
 }
 
 body.dark #menu-button div{
@@ -53,6 +53,9 @@ body.dark .login-button{
 /* login */
 body.dark .login-form{
     background-color:#0e171c ;
+    color: rgb(209, 209, 209);
+}
+body.dark .login-form input{
     color: rgb(209, 209, 209);
 }
 body.dark .login-tabs{
@@ -104,7 +107,10 @@ body.dark .navTool::-webkit-scrollbar-thumb{
 
 /* loading button */
 body.dark .loadMoreBtn{
-    background-color: rgb(61, 61, 61);
-    color: rgb(172, 172, 172);
+    background-color: rgb(200, 130, 0);
+    color: rgb(0, 0, 0);
+}
+body.dark .end-of{
+    color:rgb(226, 226, 226) ;
 }
 /*-------End of loading button */

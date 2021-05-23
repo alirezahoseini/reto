@@ -82,6 +82,23 @@
 .loadMoreBtn .loadingGif img{
     width: 30px;
 }
+.end-of{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 35px auto;
+}
+.end-of .line{
+    width: 50px;
+    border: 2px solid gray;
+    margin: auto 10px;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+}
 
 /*-----End of load more btn */
 /*-------End of grid styles */
@@ -220,10 +237,17 @@
 .navTool::-webkit-scrollbar-thumb:hover{
     background: rgb(139, 139, 139);
 }
-
 /*----End of  scrollbar  */
-
 /*------End of navTool */
+
+
+/* display and loadmore section */
+.d-none-1,.d-none-2{
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+}
+/*-------End of display and loadmore section */
 
 
 
