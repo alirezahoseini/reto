@@ -247,9 +247,52 @@
     visibility: hidden;
     opacity: 0;
 }
-/*-------End of display and loadmore section */
+/*------End of display and loadmore section */
 
-
+/* lightbox */
+.lightbox-fillter{
+    position: fixed;
+    top: 0;
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.774);
+    z-index: 1000;
+    visibility: hidden;
+    opacity: 0;
+}
+.lightbox-fillter.active{
+    visibility: visible;
+    opacity: 1;
+}
+.lightbox-base{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    padding: 20px 0;
+    visibility: hidden;
+    opacity: 0;
+}
+.lightbox-base.active{
+    visibility: visible;
+    opacity: 1;
+}
+.lightbox{
+    position:fixed;
+    top: 80px;
+    width: 80%;
+    height: 80%;
+    z-index: 1001;
+}
+.login-base.active .lightbox{
+    visibility: visible;
+    opacity: 1;
+}
+#lightbox-image{
+    margin: 0 auto;
+    width: 100%;
+}
+/*------End of lightbox */
 
 
 /* tablet and mobile style */
