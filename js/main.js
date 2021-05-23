@@ -194,6 +194,10 @@ lightboxFillter.addEventListener("click", function(){
 	lightboxBase.classList.remove("active");
 	lightboxFillter.classList.remove("active");
 })
+lightboxBase.addEventListener("click", function(){
+	lightboxBase.classList.remove("active");
+	lightboxFillter.classList.remove("active");
+})
 
 imageSelector1.addEventListener("click", function(){
 	lightboxBase.classList.add("active");
