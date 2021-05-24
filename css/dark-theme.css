@@ -42,10 +42,7 @@ body.dark #menu-button div{
     color: rgb(209, 209, 209);
 }
 body.dark .login-button{
-    background: url("../images/header/login-icon-light.svg");
-    background-size: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
+    color: white;
 }
 
 /*------ End of navigation */
