@@ -9,8 +9,7 @@
 		/>
 		<link rel="title icon" type="image/png" href="./images/icon-video.svg" />
 		<!-- styls -->
-		<link rel="stylesheet" href="../css/grid.css" />
-		<link rel="stylesheet" href="../css/style.css" />
+		<link rel="stylesheet" href="../css/login.css" />
 		<link rel="stylesheet" href="../css/dark-theme.css" />
 		<link rel="stylesheet" href="../css/general-class.css" />
 		<link rel="stylesheet" href="../css/header-and-footer.css" />
@@ -114,46 +113,53 @@
 			<!-- End of navigation -->
 
             <!--  login form -->
-			<div class="login-base mx-auto mb-5">
-				<form action="#" method="POST" class="login-form row mx-auto p-0">
-					<div class="col-md-6 text-center">
-						<h2 class="h2 bold mt-5 mb-3">Welcome Back :)</h2>
-						<div class="login-tabs">
-							<span class="active">Login</span>
-							<span>Singup</span>
-						</div>
-						<div class="input-group">
-							<i class="fa fa-user"></i>
-							<input
-								type="text"
-								name="user-name"
-								placeholder="Email or UserName"
-								required
-								minlength="4"
-							/>
-						</div>
-						<div class="input-group">
-							<i class="fa fa-lock"></i>
-							<input type="password" name="password" placeholder="Password" />
-						</div>
-						<div class="checkbox">
-							<input type="checkbox" name="c" id="c" />
-							<label for="c">Remember me</label>
-						</div>
-						<button type="submit">Submit</button>
-						<div class="login-with">
-							<a>
-								<i class="fab fa-google"></i>
-							</a>
-							<a>
-								<i class="fab fa-facebook-f"></i>
-							</a>
-						</div>
-					</div>
-					<div class="col-6 login-img p-0">
-						<div></div>
-					</div>
-				</form>
+			<div class="login-base mx-auto mb-5 mx-auto p-0">
+                <div class="forms col-md-6">
+                    <div class="login-form">
+                        <form action="#" method="POST" class="login-form row">
+                            <div class="text-center">
+                                <h2 class="h2 bold mt-5 mb-3">Welcome Back :)</h2>
+                                <div class="login-tabs">
+                                    <span class="active">Login</span>
+                                    <span>Singup</span>
+                                </div>
+                                <div class="input-group">
+                                    <i class="fa fa-user"></i>
+                                    <input
+                                        type="text"
+                                        name="user-name"
+                                        placeholder="Email or UserName"
+                                        required
+                                        minlength="4"
+                                    />
+                                </div>
+                                <div class="input-group">
+                                    <i class="fa fa-lock"></i>
+                                    <input type="password" name="password" placeholder="Password" />
+                                </div>
+                                <div class="checkbox">
+                                    <input type="checkbox" name="c" id="c" />
+                                    <label for="c">Remember me</label>
+                                </div>
+                                <button type="submit">Submit</button>
+                                <div class="login-with">
+                                    <a>
+                                        <i class="fab fa-google"></i>
+                                    </a>
+                                    <a>
+                                        <i class="fab fa-facebook-f"></i>
+                                    </a>
+                                </div>
+                            </div>
+        
+                        </form>
+                    </div>
+                    <div class="singin-form"></div>
+                </div>
+                <div class="col-md-6 login-img p-0">
+                    <div></div>
+                </div>
+
 			</div>
 			<!-- End of login form -->
 

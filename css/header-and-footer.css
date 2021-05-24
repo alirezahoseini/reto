@@ -98,7 +98,7 @@ body{
 }
 #darkButton + label::after{
     display: inline-block;
-    margin-top: 3px;
+    margin-top: 1px;
     cursor:pointer;
     font-weight: 100 !important;
     font-size: 1.2rem;
@@ -119,7 +119,7 @@ body{
 }
 #darkButton:checked + label::after{
     display: inline-block;
-    margin-top: 3px;
+    margin-top: 1px;
     cursor:pointer;
     font-weight: 100 !important;
     font-size: 1.2rem;
@@ -146,146 +146,7 @@ body{
     font-size: 1.2rem;
 }
 /*----End of login button */
-/* login form */
-.login-base{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 60px;
-    width: 100vw;
-    height: 100vh;
-    padding: 20px 0;
-}
-.login-form{
-    background-color: white;
-    padding: 10px;
-    border-radius: 15px;
-    -webkit-border-radius: 15px;
-    -moz-border-radius: 15px;
-    -ms-border-radius: 15px;
-    -o-border-radius: 15px;
-    width: 80vw;
-    display: flex;
-    overflow: hidden;
-    box-shadow: 2px 2px 60px .1px rgba(107, 107, 107, 0.082);
-}
-.login-tabs{
-    width: 60%;
-    display: flex;
-    justify-content: space-around;
-    margin: 3rem auto;
-    text-align: center;
-    padding: 4px 2px;
-    border: 2px dashed rgb(63, 63, 63);
-    border-radius: 5px;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    -ms-border-radius: 5px;
-    -o-border-radius: 5px;
-    cursor:pointer;
-}
-.login-tabs span{
-    padding: 10px;
-    width: 49%;
-    border-radius: 4px;
-    -webkit-border-radius: 4px;
-    -moz-border-radius: 4px;
-    -ms-border-radius: 4px;
-    -o-border-radius: 4px;
-}
-.login-tabs span.active{
-    background: rgb(236, 236, 236);
-}
-.login-tabs span:hover{
-    background-color: rgb(212, 212, 212);
-}
-.input-group{
-    border: 2px solid #afafaf77;
-    width:60%;
-    margin: 20px auto;
-    border-radius: 50px;
-    padding: 10px;
-    -webkit-border-radius: 50px;
-    -moz-border-radius: 50px;
-    -ms-border-radius: 50px;
-    -o-border-radius: 50px;
-}
-.input-group input{
-    outline: none;
-    border: none;
-    width: 85%;
-    font-family: inherit;
-    font-size: .8rem;
-    background-color: transparent;
-}
-.input-group i{
-    font-weight: 500;
-    width: 5%;
-}
-.login-form button{
-    background-color: rgb(6, 135, 255);
-    color: white;
-    padding: 10px;
-    margin: 35px 0;
-    width: 60%;
-    border-radius: 40px;
-    -webkit-border-radius: 40px;
-    -moz-border-radius: 40px;
-    -ms-border-radius: 40px;
-    -o-border-radius: 40px;
-    cursor:pointer;
-}
-.login-form button:hover{
-    background-color: rgb(0, 84, 163);
-}
-.login-form label{
-    cursor:pointer;
-}
-.login-with{
-    width: 60%;
-    display: flex;
-    justify-content: space-around;
-    margin: 15px auto 30px auto;
-}
-.login-with a{
-    color: black;
-    font-size: 1.5rem;
-    background: rgb(231, 231, 231);
-    width: 45px;
-    height: 45px;
-    border-radius: 50%;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor:pointer;
-    transition: .4s !important;
-    -webkit-transition: .4s !important;
-    -moz-transition: .4s !important;
-    -ms-transition: .4s !important;
-    -o-transition: .4s !important;
-}
-.login-with a:nth-child(1):hover{
-    background-color: red;
-    color: white;
-}
-.login-with a:nth-child(2):hover{
-    background-color: rgb(0, 17, 255);
-    color: white;
-}
-.login-img div{
-    display: block;
-    height: 100%;
-    width: 100%;
-    background: url("../images/home-page-images/login-gackground.jpg") right no-repeat;
-    background-size: cover;
 
-}
-/*----End of login form */
-/*--------End of login */
 
 
 /* menu */

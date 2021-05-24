@@ -96,17 +96,4 @@ loadingButton2.addEventListener("click", function(){
 
 //----End of loading button
 
-// login form
-const loginBtn = document.getElementsByClassName("login-button")[0];
-const loginFillter = document.getElementById("login-fillter");
-const loginBase = document.getElementsByClassName("login-base")[0];
-loginBtn.addEventListener("click", function () {
-	loginFillter.classList.add("active");
-	loginBase.classList.add("active");
-});
-loginFillter.addEventListener("click", function () {
-	loginFillter.classList.remove("active");
-	loginBase.classList.remove("active");
-});
-//----End of login form
 

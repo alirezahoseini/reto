@@ -1,4 +1,28 @@
-/* grid styles */
+/* in the name of allah */
+
+/* general class with the grid */
+.grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,1fr);
+    grid-template-rows:auto;
+    grid-auto-rows: min-content(50px);
+    grid-auto-flow: dense;
+    gap: 10px;
+    padding: 10px;
+    margin: 50px auto;
+}
+.grid-item {
+    position: relative;
+    border-radius: 18px;
+    -webkit-border-radius: 18px;
+    -moz-border-radius: 18px;
+    -ms-border-radius: 18px;
+    -o-border-radius: 18px;
+    overflow: hidden;
+}
+/*-------End of general class with the grid */
+
+/* grid items styles */
 .grid .grid-item img{
     width: 100%;
     height: 100%;
@@ -48,65 +72,7 @@
     width: minmax(15px , 10%);
     margin-right: 5px;
 }
-/* load more btn */
-.loadMoreBtn{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgb(230, 230, 230);
-    color: rgb(42, 42, 42);
-    height: 40px;
-    width: 40%;
-    border-radius: 100px;
-    -webkit-border-radius: 100px;
-    -moz-border-radius: 100px;
-    -ms-border-radius: 100px;
-    -o-border-radius: 100px;
-    margin: 0 auto;
-    cursor:pointer;
-}
-.loadMoreBtn:hover{
-    background-color: rgb(97, 97, 97);
-    box-shadow: 0 0 .1px 5px rgba(230, 230, 230, 0.494);
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.loadMoreBtn .loadingGif{
-    max-width: 0px;
-    visibility: hidden;
-    opacity: 0;
-}
-.loadMoreBtn.active .loadingGif{
-    visibility: visible;
-    opacity: 1;
-    margin-left: 5px;
-    margin-top: 4px;
-}
-.loadMoreBtn .loadingGif img{
-    width: 30px;
-}
-.end-of{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    margin: 35px auto;
-}
-.end-of .line{
-    width: 50px;
-    border: 2px solid gray;
-    margin: auto 10px;
-    border-radius: 50px;
-    -webkit-border-radius: 50px;
-    -moz-border-radius: 50px;
-    -ms-border-radius: 50px;
-    -o-border-radius: 50px;
-}
-
-/*-----End of load more btn */
-/*-------End of grid styles */
+/*------End of grid items styles */
 
 /* search box */
 .search-box{
@@ -248,6 +214,66 @@
 /*------End of navTool */
 
 
+/* load more btn */
+.loadMoreBtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(230, 230, 230);
+    color: rgb(42, 42, 42);
+    height: 40px;
+    width: 40%;
+    border-radius: 100px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    -ms-border-radius: 100px;
+    -o-border-radius: 100px;
+    margin: 0 auto;
+    cursor:pointer;
+}
+.loadMoreBtn:hover{
+    background-color: rgb(97, 97, 97);
+    box-shadow: 0 0 .1px 5px rgba(230, 230, 230, 0.494);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.loadMoreBtn .loadingGif{
+    max-width: 0px;
+    visibility: hidden;
+    opacity: 0;
+}
+.loadMoreBtn.active .loadingGif{
+    visibility: visible;
+    opacity: 1;
+    margin-left: 5px;
+    margin-top: 4px;
+}
+.loadMoreBtn .loadingGif img{
+    width: 30px;
+}
+.end-of{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 35px auto;
+}
+.end-of .line{
+    width: 50px;
+    border: 2px solid gray;
+    margin: auto 10px;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+}
+
+/*-----End of load more btn */
+
+
 /* display and loadmore section */
 .d-none-1,.d-none-2{
     position: absolute;
@@ -257,22 +283,154 @@
 /*------End of display and loadmore section */
 
 
-/* tablet and mobile style */
-@media screen and (max-width:991px){
+/* spans */
+.full-width{
+    grid-column: 1/-1;
+}
+.span1{
+    grid-column: auto/span 1;
+    grid-row: auto/span 1;
+}
+.spanx1{
+    grid-column: auto/span 1;
+}
+.spany1{
+    grid-row: auto/span 1;
+}
+.span2{
+    grid-column: auto/span 2;
+    grid-row: auto/span 2;
+}
+.spanx2{
+    grid-column: auto/span 2;
+}
+.spany2{
+    grid-row: auto/span 2;
+}
+.span3{
+    grid-column: auto/span 3;
+    grid-row: auto/span 3;
+}
+.spanx3{
+    grid-column: auto/span 3;
+}
+.spany3{
+    grid-row: auto/span 3;
+}
+.span4{
+    grid-column: auto/span 4;
+    grid-row: auto/span 4;
+}
+.spanx4{
+    grid-column: auto/span 4;
+}
+.spany4{
+    grid-row: auto/span 4;
+}
+.span5{
+    grid-column: auto/span 5;
+    grid-row: auto/span 5;
+}
+.spanx5{
+    grid-column: auto/span 5;
+}
+.spany5{
+    grid-row: auto/span 5;
+}
+.span6{
+    grid-column: auto/span 6;
+    grid-row: auto/span 6;
+}
+.spanx6{
+    grid-column: auto/span 6;
+}
+.spany6{
+    grid-row: auto/span 6;
+}
+.span7{
+    grid-column: auto/span 7;
+    grid-row: auto/span 7;
+}
+.spanx7{
+    grid-column: auto/span 7;
+}
+.spany7{
+    grid-row: auto/span 7;
+}
+.span8{
+    grid-column: auto/span 8;
+    grid-row: auto/span 8;
+}
+.spanx8{
+    grid-column: auto/span 8;
+}
+.spany8{
+    grid-row: auto/span 8;
+}
+.span9{
+    grid-column: auto/span 9;
+    grid-row: auto/span 9;
+}
+.spanx9{
+    grid-column: auto/span 9;
+}
+.spany9{
+    grid-row: auto/span 9;
+}
+.span10{
+    grid-column: auto/span 10;
+    grid-row: auto/span 10;
+}
+.spanx10{
+    grid-column: auto/span 10;
+}
+.spany10{
+    grid-row: auto/span 10;
+}
+.span11{
+    grid-column: auto/span 11;
+    grid-row: auto/span 11;
+}
+.spanx11{
+    grid-column: auto/span 11;
+}
+.spany11{
+    grid-row: auto/span 11;
+}
 
-    /* image fillter  */
+/* --------End of spans */
+
+
+
+
+
+
+/* mobile style */
+@media screen and (max-width:767.9px){
+
+    /* grid items */
+    .grid-item {
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+    }
     .image-filter{
         display: none;
     }
     .grid-item:hover{
         box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.233);
     }
-    /*-----End of image fillter  */
+    /*-----End of grid items  */
 
+    
     /* loading btn */
     .loadMoreBtn{
         width: 80%;
     }
     /*-----End of loading btn */
 }
-/*-------End of tablet and mobile style */
+
+
+/* --------End of mobile style */
