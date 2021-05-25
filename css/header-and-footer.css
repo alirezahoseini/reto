@@ -48,6 +48,9 @@ body{
     align-items: center;
     position: relative;
 }
+.buttons a{
+    color: black;
+}
 /* switcher */
 @keyframes dark{
     0%{
