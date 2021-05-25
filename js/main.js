@@ -97,3 +97,10 @@ loadingButton2.addEventListener("click", function(){
 //----End of loading button
 
 
+// login page - form chenger
+const loginBtn = document.getElementById("login-btn");
+loginBtn.addEventListener("click" , function() {
+	loginBtn.classList.toggle("active");
+});
+
+//----End of login page - form chenger

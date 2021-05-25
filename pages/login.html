@@ -112,56 +112,123 @@
 			</nav>
 			<!-- End of navigation -->
 
-            <!--  login form -->
-			<div class="login-base mx-auto mb-5 mx-auto p-0">
-                <div class="forms col-md-6">
-                    <div class="login-form">
-                        <form action="#" method="POST" class="login-form row">
-                            <div class="text-center">
-                                <h2 class="h2 bold mt-5 mb-3">Welcome Back :)</h2>
-                                <div class="login-tabs">
-                                    <span class="active">Login</span>
-                                    <span>Singup</span>
-                                </div>
-                                <div class="input-group">
-                                    <i class="fa fa-user"></i>
-                                    <input
-                                        type="text"
-                                        name="user-name"
-                                        placeholder="Email or UserName"
-                                        required
-                                        minlength="4"
-                                    />
-                                </div>
-                                <div class="input-group">
-                                    <i class="fa fa-lock"></i>
-                                    <input type="password" name="password" placeholder="Password" />
-                                </div>
-                                <div class="checkbox">
-                                    <input type="checkbox" name="c" id="c" />
-                                    <label for="c">Remember me</label>
-                                </div>
-                                <button type="submit">Submit</button>
-                                <div class="login-with">
-                                    <a>
-                                        <i class="fab fa-google"></i>
-                                    </a>
-                                    <a>
-                                        <i class="fab fa-facebook-f"></i>
-                                    </a>
-                                </div>
-                            </div>
-        
-                        </form>
-                    </div>
-                    <div class="singin-form"></div>
-                </div>
-                <div class="col-md-6 login-img p-0">
-                    <div></div>
-                </div>
+			<div class="form-base row my-5">
+				<!-- forms  -->
+				<div class="col-md-6 forms">
+					<!-- form header -->
+					<div class="forms-header">
+						<h2 class="login-title  h2 bold mt-5 mb-3">Welcome Back :)</h2>
+						<h2 class="singup-title active h2 bold mt-5 mb-3">Welcome To RETO:)</h2>
+						<div class="form-tabs">
+							<span id="login-btn" title="login to Reto">Login</span>
+							<span id="singup-btn" title="singin to Reto">Singup</span>
+						</div>
+					</div>
+					<!-- End of form header -->
+					<!-- login form -->
+					<form action="#" method="POST" class="login-form" id="login-form">
+						<div class="text-center">
+							<div class="input-group">
+								<i class="fa fa-user"></i>
+								<input
+									type="text"
+									name="user-name"
+									placeholder="Email or UserName"
+									required
+									minlength="4"
+								/>
+							</div>
+							<div class="input-group">
+								<i class="fa fa-lock"></i>
+								<input type="password" name="password" placeholder="Password" />
+							</div>
+							<div class="checkbox">
+								<input type="checkbox" name="c" id="c" />
+								<label for="c">Remember me</label>
+							</div>
+							<button type="submit">Submit</button>
+							<div class="login-with mx-auto mb-3">
+								<h4>Login With</h4>
+								<div class="icons ml-auto">
+									<a class="google">
+										<i class="fab fa-google"></i>
+										<span>Goole</span>
+									</a>
+									<a class="facebook">
+										<i class="fab fa-facebook-f"></i>
+										<span>Facebook</span>
+									</a>
+								</div>
+							</div>
+							<a href="#" class="forgot-pass">
+								Forgot Password?
+							</a>
+						</div>
+					</form>
+					<!-- End of login form -->
+					<!-- Singup form -->
+					<form action="#" method="POST" class="singup-form active" id="singup-form">
+						<div class="text-center">
+							<div class="input-group">
+								<i class="fa fa-user"></i>
+								<input
+									type="text"
+									name="user-name"
+									placeholder="UserName"
+									required
+									minlength="4"
+								/>
+							</div>
+							<div class="input-group">
+								<i class="fa fa-envelope"></i>
+								<input
+									type="email"
+									name="email"
+									placeholder="Email"
+									required
+									minlength="8"
+								/>
+							</div>
+							<div class="input-group">
+								<i class="fa fa-lock"></i>
+								<input type="password" name="password" placeholder="Password" />
+							</div>
+							<div class="checkbox">
+								<input type="checkbox" name="accept" id="accept" />
+								<label for="accept" class="singup-lable">
+									<span>
+										By Registering in <strong class="bold">RETO</strong> I Accept All Terms of <a href="#">Privacy</a>
+									</span>
+								</label>
+							</div>
+							<button type="submit">Submit</button>
+							<div class="login-with mx-auto mb-3">
+								<h4>Singup With</h4>
+								<div class="icons ml-auto">
+									<a class="google">
+										<i class="fab fa-google"></i>
+										<span>Goole</span>
+									</a>
+									<a class="facebook">
+										<i class="fab fa-facebook-f"></i>
+										<span>Facebook</span>
+									</a>
+								</div>
+							</div>
+							<a href="#" class="forgot-pass">
+								You Have an Account.? Login
+							</a>
+						</div>
+					</form>
+					<!-- End of Singup form -->
+				</div>
+				<!-- forms  -->
 
+				<!-- form image  -->
+				<div class="col-md-6 form-image">	
+				</div>
+				<!-- End of form image  -->
 			</div>
-			<!-- End of login form -->
 
 			<!-- footer -->
 			<footer class="row m-0 p-0">

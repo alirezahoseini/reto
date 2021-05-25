@@ -395,25 +395,5 @@ footer{
     width: 300;
 }
 /*-------End of hamberger menu */
-/* login */
-.login-base{
-    padding-top: 40px;
-}
-.login-form .login-img{
-    display: none;
-}
-.login-tabs{
-    width: 90%;
-}
-.input-group{
-    width: 90%;
-}
-.login-form button{
-    width: 90%;
-}
-.login-with{
-    width: 90%;
-}
-/*------End of login */
 }
 /* End of mobile style */

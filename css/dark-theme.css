@@ -48,11 +48,11 @@ body.dark .login-button{
 /*------ End of navigation */
 
 /* login */
-body.dark .login-form{
-    background-color:#0e171c ;
+body.dark .form-base{
+    background-color:#1e262a ;
     color: rgb(209, 209, 209);
 }
-body.dark .login-form input{
+body.dark .forms input{
     color: rgb(209, 209, 209);
 }
 body.dark .login-tabs{
@@ -63,6 +63,13 @@ body.dark .login-tabs span.active{
 }
 body.dark .login-tabs span:hover{
     background-color: gray;
+}
+body.dark .login-with{
+    background-color:#3a3a3a ;
+    border-color: rgb(46, 46, 46);
+}
+body.dark .login-with .icons i{
+    color: white;
 }
 /*------End of login */
 
