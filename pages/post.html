@@ -120,18 +120,21 @@
 			</nav>
 			<!-- End of navigation -->
 
+			<!-- lightbox -->
+			<div class="lightbox-fillter"></div>
+			<div class="lightbox-base">
+				<div class="lightbox">
+					<img src="../images/home-page-images/1.jpg" id="lightbox-image">
+				</div>
+			</div>				
+			<!-- End of lightbox -->
+
             <!-- post -->
-            <div class="row my-5">
-                <!-- lightbox -->
-                <div class="lightbox-fillter"></div>
-                <div class="lightbox" id="lightbox">
-                    
-                </div>
-                <!-- End of lightbox -->
+            <div class="row my-5 overflow-x-hidden">
                 <!-- post image -->
                 <div class="post-image">
                     <figure>
-                        <a href="#lightbox">
+                        <a id="image">
                             <img src="../images/home-page-images/1.jpg" alt="image 1">
                         </a>
                         <div>
@@ -149,7 +152,7 @@
                             </div>
                             <!-- End of post info icons -->
                             <div class="post-image-title">
-                                <figcaption class="h3">City Light landscape 4K Wallpaper</figcaption>
+                                <figcaption class="h3">	The Night City landscape 4K Wallpaper</figcaption>
                                 <div class="post-image-data">
                                     <span>
                                         <i class="fa fa-clock fa-fw"></i><span>2021/5/25</span>
@@ -165,6 +168,33 @@
                 <!-- End of post image -->
             </div>
             <!-- End of post -->
+
+			<!-- Categoris -->
+			<div class="row m-0 p-0">
+				<div class="categoris col-11 mx-auto mb-5">
+					<h4 class="h4">
+						Categoris: 
+					</h4>
+					<span class="categoris-row">
+						<a href="#" class="categoris-item">
+							<i class="fa fa-gem fa-fw"></i> Permium
+						</a>
+						<a href="#" class="categoris-item">
+							<i class="fa fa-disease fa-fw"></i> The Night
+						</a>
+						<a href="#" class="categoris-item">
+							<i class="fa fa-tv fa-fw"></i> Landscape
+						</a>
+						<a href="#" class="categoris-item">
+							<i class="fa fa-map-marked fa-fw"></i> City
+						</a>
+						<a href="#" class="categoris-item">
+							<i class="fa fa-camera-retro fa-fw"></i> Proposed
+						</a>
+					</span>
+				</div>
+			</div>
+			<!-- End of Categoris -->
 
 
             <!-- footer -->
@@ -239,7 +269,7 @@
 			<!--End of footer -->
 		</div>
 		<!-- script -->
-		<script src="../js/home-page.js"></script>
+		<script src="../js/post.js"></script>
 		<script src="../js/header.js"></script>
 		<!-- End of script -->
 	</body>

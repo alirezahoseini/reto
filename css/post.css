@@ -39,6 +39,7 @@
     position: fixed;
     top: 140px;
     left: 0;
+    z-index: 100;
 }
 .post-info-icons a{
     margin: 10px 0;
@@ -85,7 +86,7 @@
     display: block;
     width: 100vw;
     height: 100vh;
-    background-color: rgba(0, 0, 0, 0.774);
+    background-color: rgba(0, 0, 0, 0.856);
     z-index: 1000;
     visibility: hidden;
     opacity: 0;
@@ -146,6 +147,32 @@
 }
 /*------End of lightbox */
 
+/* categoris */
+.categoris{
+    display: flex;
+    line-height: 50px;
+    overflow-x: hidden;
+}
+
+.categoris-item{
+    padding: 5px 10px;
+    background-color: rgb(235, 235, 235);
+    margin: 0 7px;
+    color: rgb(42, 42, 42);
+    font-size: .8rem;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.categoris-item:hover{
+    background: rgb(195, 195, 195);
+}
+.categoris-item i{
+    font-weight: 400;
+}
+/*--------End of categoris */
 
 
 
@@ -170,7 +197,33 @@
         -o-border-radius: 10px;
         margin-top: 20px;
         padding: 5px;
-}
+    }
     /*-----End of post info icons  */
+
+    /* categoris */
+    .categoris-row{
+        white-space: nowrap;
+        overflow-x: scroll;
+    }
+    /* scrollbar  */
+    .categoris-row::-webkit-scrollbar{
+        height: 8px;
+    }
+    .categoris-row::-webkit-scrollbar-track{
+        background-color: rgb(238, 238, 238);
+    }
+    .categoris-row::-webkit-scrollbar-thumb{
+        background: rgb(202, 202, 202);
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+    }
+    .categoris-row::-webkit-scrollbar-thumb:hover{
+        background: rgb(139, 139, 139);
+    }
+    /*---End of  scrollbar  */
+    /*-----End of categoris */
 }
 /*------End of mobile style */
