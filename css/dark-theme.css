@@ -159,4 +159,10 @@ body.dark .categoris-item:hover{
 }
 /*---End of categoris */
 
+/* donload box */
+body.dark .download-box{
+    background-color: rgb(31, 31, 31);
+}
+/*------End of donload box */
+
 /*--------End of post page  */
