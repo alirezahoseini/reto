@@ -159,10 +159,20 @@ body.dark .categoris-item:hover{
 }
 /*---End of categoris */
 
-/* donload box */
+/* download box */
 body.dark .download-box{
     background-color: rgb(31, 31, 31);
 }
 /*------End of donload box */
+
+/* more photos */
+body.dark .more-photos-title h4{
+    color: rgb(238, 238, 238);
+}
+body.dark .more-photos-title hr{
+    border-color: gray;
+}
+
+/*-----End of more photos */
 
 /*--------End of post page  */
