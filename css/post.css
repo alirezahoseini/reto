@@ -1,0 +1,108 @@
+/* post image  */
+.post-image{
+    max-width: 95%;
+    margin: 0 auto;
+}
+.post-image img{
+    width: 100%;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.post-image .post-image-title{
+    border-left: 3px solid rgb(0, 132, 255);
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
+.post-image figure figcaption{
+    margin: 40px 0;
+    line-height: 40px;
+    font-weight: 700;
+}
+
+/* post info icons */
+.post-info-icons{
+    display: inline-flex;
+    align-items: left;
+    justify-content: center;
+    flex-direction: column;
+    background-color: white;
+    box-shadow: 2px 2px 50px .1px rgba(0, 0, 0, 0.103);
+    padding: 10px 10px 10px 4px;
+    border-radius: 0 5px 5px 0;
+    -webkit-border-radius: 0 5px 5px 0;
+    -moz-border-radius: 0 5px 5px 0;
+    -ms-border-radius: 0 5px 5px 0;
+    -o-border-radius: 0 5px 5px 0;
+    position: fixed;
+    top: 140px;
+    left: 0;
+}
+.post-info-icons a{
+    margin: 10px 0;
+    font-size: .9rem;
+    cursor: pointer;
+}
+.post-info-icons a:nth-child(1) i{
+    color: rgb(209, 0, 63);
+}
+.post-info-icons a:nth-child(2) i{
+    color: rgb(0, 113, 241);
+}
+.post-info-icons a:nth-child(3) i{
+    color: rgb(255, 72, 0);
+}
+
+
+/*----End of post info icons */
+
+.post-image-data span i{
+    font-weight: 400;
+    color: rgb(29, 29, 29);
+}
+.post-image-data span span{
+    color: rgb(71, 71, 71);
+    font-size: .9rem;
+    font-weight: 500;
+}
+.post-image-data span a{
+    color: #006eff;
+    font-size: .9rem;
+    font-weight: 700;
+}
+.post-image-data span a:hover{
+    text-decoration: underline !important;
+}
+
+/*-------End of post image  */
+
+
+
+
+
+
+
+
+
+/* mobile style */
+@media screen and (max-width:768px){
+    /* post info icons  */
+    .post-info-icons{
+        position: static;
+        flex-direction: row;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+        margin-top: 20px;
+        padding: 5px;
+}
+    /*-----End of post info icons  */
+}
+/*------End of mobile style */

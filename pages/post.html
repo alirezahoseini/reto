@@ -2,14 +2,15 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
-		<title>RETO | Login Page</title>
+		<title>RETO | Home Page</title>
 		<meta
 			name="viewport"
 			content="width=device-width, initial-scale=1.0 , maximum-scale=1 "
 		/>
 		<link rel="title icon" type="image/png" href="./images/icon-video.svg" />
 		<!-- styls -->
-		<link rel="stylesheet" href="../css/login.css" />
+		<link rel="stylesheet" href="../css/grid.css" />
+		<link rel="stylesheet" href="../css/post.css" />
 		<link rel="stylesheet" href="../css/dark-theme.css" />
 		<link rel="stylesheet" href="../css/general-class.css" />
 		<link rel="stylesheet" href="../css/header-and-footer.css" />
@@ -20,7 +21,7 @@
 	<body id="bodyChenger">
 		<div class="container-fluid m-0 p-0">
 
-            <!-- navigation -->
+			<!-- navigation -->
 			<nav id="navigation">
 				<!-- menu -->
 				<!-- menu-button -->
@@ -101,6 +102,13 @@
 				<!-- End of logo -->
 
 				<section class="buttons">
+					<!-- login -->
+					<!-- login button -->
+					<a href="./pages/login.html" target="_blank">
+						<i class="login-button fa fa-user"></i>
+					</a>
+					<!-- login button -->
+					<!-- End of login -->
 
 					<!-- switcher -->
 					<div id="switcher">
@@ -112,125 +120,54 @@
 			</nav>
 			<!-- End of navigation -->
 
-			<div class="form-base row my-5">
-				<!-- forms  -->
-				<div class="col-md-6 forms">
-					<!-- form header -->
-					<div class="forms-header">
-						<h2 class="login-title active h2 bold mt-5 mb-3">Welcome Back :)</h2>
-						<h2 class="singup-title h2 bold mt-5 mb-3">Welcome To RETO :)</h2>
-						<div class="form-tabs">
-							<span id="login-btn" class="active" title="login to Reto">Login</span>
-							<span id="singup-btn" title="singin to Reto">Singup</span>
-						</div>
-					</div>
-					<!-- End of form header -->
-					<!-- login form -->
-					<form action="#" method="POST" class="login-form active" id="login-form">
-						<div class="text-center">
-							<div class="input-group">
-								<i class="fa fa-user"></i>
-								<input
-									type="text"
-									name="user-name"
-									placeholder="Email or UserName"
-									required
-									minlength="4"
-								/>
-							</div>
-							<div class="input-group">
-								<i class="fa fa-lock"></i>
-								<input type="password" name="password" placeholder="Password" />
-							</div>
-							<div class="checkbox">
-								<input type="checkbox" name="c" id="c" />
-								<label for="c">Remember me</label>
-							</div>
-							<button type="submit">Submit</button>
-							<div class="login-with mx-auto mb-3">
-								<h4>Login With</h4>
-								<div class="icons ml-auto">
-									<a class="google">
-										<i class="fab fa-google"></i>
-										<span>Goole</span>
-									</a>
-									<a class="facebook">
-										<i class="fab fa-facebook-f"></i>
-										<span>Facebook</span>
-									</a>
-								</div>
-							</div>
-							<a href="#" class="forgot-pass">
-								Forgot Password?
-							</a>
-						</div>
-					</form>
-					<!-- End of login form -->
-					<!-- Singup form -->
-					<form action="#" method="POST" class="singup-form " id="singup-form">
-						<div class="text-center">
-							<div class="input-group">
-								<i class="fa fa-user"></i>
-								<input
-									type="text"
-									name="user-name"
-									placeholder="UserName"
-									required
-									minlength="4"
-								/>
-							</div>
-							<div class="input-group">
-								<i class="fa fa-envelope"></i>
-								<input
-									type="email"
-									name="email"
-									placeholder="Email"
-									required
-									minlength="8"
-								/>
-							</div>
-							<div class="input-group">
-								<i class="fa fa-lock"></i>
-								<input type="password" name="password" placeholder="Password" />
-							</div>
-							<div class="checkbox">
-								<input type="checkbox" name="accept" id="accept" />
-								<label for="accept" class="singup-lable">
-									<span>
-										By Registering in <strong class="bold">RETO</strong> I Accept All Terms of <a href="#">Privacy</a>
-									</span>
-								</label>
-							</div>
-							<button type="submit">Submit</button>
-							<div class="login-with mx-auto mb-3">
-								<h4>Singup With</h4>
-								<div class="icons ml-auto">
-									<a class="google">
-										<i class="fab fa-google"></i>
-										<span>Goole</span>
-									</a>
-									<a class="facebook">
-										<i class="fab fa-facebook-f"></i>
-										<span>Facebook</span>
-									</a>
-								</div>
-							</div>
-							<a href="#" class="forgot-pass">
-								You Have an Account.? Login
-							</a>
-						</div>
-					</form>
-					<!-- End of Singup form -->
-				</div>
-				<!-- forms  -->
+            <!-- post -->
+            <div class="row my-5">
+                <!-- lightbox -->
+                <div class="lightbox-fillter"></div>
+                <div class="lightbox" id="lightbox">
+                    
+                </div>
+                <!-- End of lightbox -->
+                <!-- post image -->
+                <div class="post-image">
+                    <figure>
+                        <a href="#lightbox">
+                            <img src="../images/home-page-images/1.jpg" alt="image 1">
+                        </a>
+                        <div>
+                            <!-- post info icons -->
+                            <div class="post-info-icons">
+                                <a>
+                                    <i class="fa fa-heart fa-fw"></i> 152
+                                </a>
+                                <a>
+                                    <i class="fa fa-comment fa-fw"></i> 28
+                                </a>
+                                <a>
+                                    <i class="fa fa-download fa-fw"></i> 1126
+                                </a>
+                            </div>
+                            <!-- End of post info icons -->
+                            <div class="post-image-title">
+                                <figcaption class="h3">City Light landscape 4K Wallpaper</figcaption>
+                                <div class="post-image-data">
+                                    <span>
+                                        <i class="fa fa-clock fa-fw"></i><span>2021/5/25</span>
+                                    </span>
+                                    <span>
+                                        <i class="fa fa-user fa-fw"></i> <a href="#">Alireza</a>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </figure>
+                </div>
+                <!-- End of post image -->
+            </div>
+            <!-- End of post -->
 
-				<!-- form image  -->
-				<div class="col-md-6 form-image">	
-				</div>
-				<!-- End of form image  -->
-			</div>
 
-			<!-- footer -->
+            <!-- footer -->
 			<footer class="row m-0 p-0">
 				<div class="col-12">
 					<h2 class="footer-logo">RETO</h2>
@@ -302,8 +239,8 @@
 			<!--End of footer -->
 		</div>
 		<!-- script -->
+		<script src="../js/home-page.js"></script>
 		<script src="../js/header.js"></script>
-		<script src="../js/login.js"></script>
 		<!-- End of script -->
 	</body>
 </html>

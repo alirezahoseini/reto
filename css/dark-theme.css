@@ -118,3 +118,22 @@ body.dark .end-of{
     color:rgb(226, 226, 226) ;
 }
 /*-------End of loading button */
+
+/* post page  */
+body.dark .post-image figcaption{
+    color: white;
+}
+body.dark .post-image-data span i{
+    color: gray;
+}
+body.dark .post-image-data span span{
+    color: rgb(184, 184, 184);
+}
+body.dark .post-info-icons{
+    background-color: rgb(31, 31, 31);
+}
+body.dark .post-info-icons a{
+    color: rgb(179, 179, 179);
+}
+
+/*--------End of post page  */
