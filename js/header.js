@@ -27,3 +27,12 @@ hambergerMenuBgFillter.addEventListener("click", function () {
 });
 
 //-----End of menu button
+
+// switcher button
+const switcherBtn = document.getElementById("page-switcher-btn");
+const switcherIcons = document.getElementById("page-switcher-icons");
+	switcherBtn.addEventListener("click", function() {
+	switcherBtn.classList.toggle("active");
+	switcherIcons.classList.toggle("active");
+	})
+//--------End of switcher button
