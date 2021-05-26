@@ -226,3 +226,27 @@ label , #c , #accept{
 /*------End of form */
 }
 /* End of mobile style */
+
+
+
+
+
+/* mobile fix style  */
+@media screen and (max-width:380px){
+    .login-with h4{
+        font-size: .8rem;
+    }
+    .icons a.google:hover{
+        width:30px ;
+    }
+    .icons a.facebook:hover{
+        width:30px;
+    }
+    .icons a span{
+        font-size: .5rem;
+    }
+    .icons a{
+        margin-right: 0px;
+    }
+}
+/*------ End of mobile fix style  */
